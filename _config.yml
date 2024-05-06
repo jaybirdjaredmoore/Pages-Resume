@@ -1,0 +1,6 @@
+sass:
+  sass_dir: _sass
+
+collections:
+  - work_history
+  - skills

@@ -1,0 +1,12 @@
+---
+layout: default
+title: Skills
+---
+
+<h1>Skills</h1>
+
+{% assign sorted_skills = site.skills | sort:"order" %}
+{% for item in sorted_skills %}
+    <h1>{{item.category}}</h1>
+    <p>{{item.content}}</p>
+{% endfor %}

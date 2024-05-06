@@ -1,0 +1,12 @@
+---
+layout: default
+title: Work History
+---
+
+<h1> Work History </h1>
+
+{% assign sorted_pages = site.work_history | sort:"order" %}
+{% for job in sorted_pages %}
+    <h2>{{job.title}}</h2>
+    <p>{{job.content}}</p>
+{% endfor %}
