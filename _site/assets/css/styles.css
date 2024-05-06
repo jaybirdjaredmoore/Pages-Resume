@@ -1,15 +1,19 @@
 body {
-  background-color: #000444;
+  background: #000444;
+}
+
+.header {
   color: white;
-  display: flex;
+  border: solid;
+  padding-left: 15px;
 }
 
-.sidenav {
-  background-color: #002644;
-}
-
-.current {
-  color: green;
+.navbar {
+  color: red;
+  border: solid;
+  padding-left: 15px;
+  width: 100px;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
