@@ -1,3 +1,13 @@
+body {
+  background-color: #000444;
+  color: white;
+  display: flex;
+}
+
+.sidenav {
+  background-color: #002644;
+}
+
 .current {
   color: green;
 }
