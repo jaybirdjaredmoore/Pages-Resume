@@ -2,19 +2,66 @@ $darkest-blue: #000444;
 $lighter-blue: #002644;
 
 body {
-    background: $darkest-blue;
+    background: lightblue;
 }
 
-.header {
+p {
+    padding-left: 5px;
+}
+
+#page {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 100px repeat(2, 1fr);
+    grid-template-rows: 250px 500px 3fr;
+    grid-template-areas: 
+    "top top top top"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+
+header {
     color: white;
     border: solid;
-    padding-left: 15px;
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 175px 50px 100px;
+    grid-template-rows: 250px;
+    grid-template-areas: 
+    "logo . summary summary";
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.navbar {
+#logo {
+    grid-area: logo;
+    color: green;
+    border: solid;
+    place-self: center;
+}
+
+#summary {
+    grid-area: summary;
+    color: green;
+    border: solid;
+    align-self: center;
+}
+
+nav {
     color: red;
     border: solid;
-    padding-left: 15px;
-    width: 100px;
-    height: 100vh
+    grid-area: sidebar;
+}
+
+.main {
+    color: blue;
+    border: solid;
+    grid-area: main;
+}
+
+.footer {
+    color: green;
+    border: solid;
+    grid-area: footer;
 }
