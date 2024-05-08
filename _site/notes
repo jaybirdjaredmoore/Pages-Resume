@@ -29,3 +29,27 @@ https://codepen.io/jh3y/pen/MWLyGxo
 https://codepen.io/cleveryeti/pen/PoXmZjv
 https://codepen.io/ecemgo/pen/GRzpEpB
 https://codepen.io/mubangadv/pen/YzJNbOa - 3d cards for work history?
+
+Colors:
+darkest-blue: #26295F
+darker-blue: #353983  /based on monochromatic combo with darkest-blue
+purple-highlight: #40265F /based on analogous combo with darkest-blue
+teal-highlight: #26465F /based on analogous combo with darkest-blue
+
+light-blue: #4449A7 /based on monochromatic combo with darker-blue
+purple-highlight: #583583 /based on analogous combo with darker-blue
+teal-highlight: #356083 /based on analogous combo with darker-blue
+
+lighter-blue: #6065BE /based on monochromatic combo with light-blue
+purple-highlight: #7144A7
+teal-highlight: #447BA7
+
+bluejay-blue-dark: #4876E6
+bluejay-blue-darker: #1E56DD /based on monochromatic combo with bluejay-blue-dark
+bluejay-purple-dark: #6948E6 /based on analogous combo with bluejay-blue-dark
+bluejay-teal-dark: #48C5E6 /based on analogous combo with bluejay-blue-dark
+
+bluejay-blue-lighter: #6AA6EF
+bluejay-blue-light: #3C8AEA
+bluejay-purple-light: #716AEF
+bluejay-teal-light: #6AE9EF

@@ -6,43 +6,98 @@ body {
     color: white;
 }
 
-.menubar {
-    border: solid;
-    border-color: white;
-    text-align: right;
+.topbar {
+    background-color: #002644;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
 }
 
-.landing {
-    border: solid;
-    border-color: red;
+.navbar {
+    list-style: none;
+    width: 150px;
     display: flex;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    display: grid;
-    grid-template-columns: 20vw 1fr;
-    grid-template-rows: 100px 40vh;
     gap: 10px;
 }
 
-#logo {
-    place-self: center;
-    grid-column: 1;
-    grid-row: 2
+.logo {
+    border: solid purple;
+    width: 100px;
 }
 
-#logo img {
-    max-width: 100%;
-    max-height: 100%;
+.navbar li {
+    border: solid red;
+    align-self: center;
+    /*
+    Text sizing
+    */
 }
 
-#summary {
+.landing {
+    border: solid blue;
+    height: calc(100svh - 300px);
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+    }
+
+.landing > * {
+    justify-self: center;
+}
+
+.landing > h1 {
+    grid-column: 2;
+    grid-row: 1;
+    border: solid green;
+}
+
+.landing > h2 {
     grid-column: 2;
     grid-row: 2;
-    background-image: url("../images/Feather\ Effect.png");
-    background-position-x: -50px;
-    background-size: contain;
-    background-repeat: repeat-x;
-    align-content: center;
-    padding-left: 10px;
+    border: solid green;
+}
+
+.landing > p {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.workhistory {
+    border: solid lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.workhistory > div {
+    width: 97%;
+    border: dotted green;
+    margin: 10px;
+}
+
+.listing {
+    margin-left: 150px;
+    border: solid blue;
+}
+
+.skills {
+    border: solid purple;
+    height: 100svh;
+}
+
+.skills > h1 {
+    border: solid green;
+    width: 50%;
+    height: 50px;
+}
+
+.skillsgroup {
+    border: solid green;
+    display: flex;
+}
+
+.skillgroup {
+    border: solid indianred;
 }

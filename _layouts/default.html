@@ -1,34 +1,84 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  </head>
+{% include head.html %}
+
   <body>
-    <header class="menubar">
-    </header>
+    <nav class="topbar">
+      <div class="logo"><p>Logo</p></div>
+      <ul class="navbar">
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
 
     <main>
       <div class="landing">
-        <div id="logo"><img src="../assets/images/BlueJayLogo.png" alt="BlueJayLogo"/>
+        <h1>Jared Moore</h1>
+        <h2>Technical Skill with a Creative Mind.</h2>
+        <p>Built from scratch using Jekyll</p>
+      </div>
+
+      <div class="workhistory">
+        <p>Down arrow</p>
+        <h1>Work History</h1>
+        <div class="selfimprovementera">
+          <h1>Self Improvement Era</h1>
+          <div class="listing selfimprovment">
+            <h2>Self Improvement Period</h2>
+            <h3>Jul 2023 - Present</h3>
+            <p>Tagline goes here</p>
+            <ul>
+              <li>Built custom Smart Home applications locally hosted on Raspberry Pi</li>
+            </ul>
         </div>
-        <div id="summary">
-          <h1 id="name">Jared Moore</h1>
-          <h2>Unified Communications Professional</h2>
-          <p>User-focused, Enterprise-grade Engineer with 7 years of experience, specializing in communication-at-scale through Agile development. With a performance background, and a passion for knowledge transfer, I can not only build ideas but let them thrive through enablement.</p>
+        </div>
+        <div class="teamleadera">
+          <h1>Team Lead Era</h1>
+          <div class="listing eightengineeringlead">
+            <h2>Engineering Team Lead | 8x8</h2>
+            <h3>Jan 2022 - Jun 2023</h3>
+            <p>Tagline goes here</p>
+            <ul>
+              <li>Integrated team into a new company-wide project management methodologies</li>
+            </ul>
+          </div>
+          <div class="listing fuzeteamlead">
+            <h2>Team Lead - Core Voice Services | Fuze</h2>
+            <h3>Jul 2021 - Jan 2022</h3>
+            <p>Tagline goes here</p>
+            <ul>
+              <li>Served product manager role to strategicially define scope of releases</li>
+            </ul>
+          </div>
+        </div>
+        <div class="UC Engineer Era">
+          <h1>UC Engineer Era</h1>
+        </div>
+        <div class="Support Engineer Era">
+          <h1>Support Engineer Era</h1>
+        </div>
+        <div class="Customer Service Era">
+          <h1>Customer Service Era</h1>
         </div>
       </div>
 
-      <div class="menu">
-        <!---
-        If the page is the index then display the menu bar down here, otherwise have it at the top of the page
-        -->
+
+      <div class="skills">
+        <h1>Skills</h1>
+        <div class="skillsgroup">
+          <div class="skillgroup telecom"><p>Telecom</p></div>
+          <div class="skillgroup software"><p>Software</p></div>
+          <div class="skillgroup infra"><p>Infra</p></div>
+          <div class="skillgroup product"><p>Product</p></div>
+        </div>
       </div>
+
+
+      <div class="contact"><p>Contact</p></div>
     </main>
+
+    <footer>
+    </footer>
 
   </body>
 </html>
