@@ -1,6 +1,5 @@
 - name: Home
-  link: /
 - name: Work History
-  link: /workhistory.html
+  link: \#workhistory
 - name: Skills
-  link: /skills.html
+  link: \#skills

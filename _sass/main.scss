@@ -1,103 +1,173 @@
-$darkest-blue: #000444;
-$lighter-blue: #002644;
+$darkest-blue: #26295F;
+$darker-blue: #353983;
+$light-blue: #4449A7;
+$lighter-blue: #6065BE;
+$purple-highlight: #40265F;
+$teal-highlight: #26465F;
 
 body {
     background: $darkest-blue;
     color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.topbar {
+#topbar {
     background-color: #002644;
     display: flex;
     justify-content: space-between;
-    height: 150px;
+    height: 100px;
+    border-radius: 15px;
+    opacity: 90%;
+}
+
+#topbar > img {
+    object-fit: contain;
+    margin-left: 30px;
 }
 
 .navbar {
     list-style: none;
     width: 150px;
     display: flex;
-    gap: 10px;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+    gap: 45px;
+    padding-right: 50px;
 }
 
-.logo {
-    border: solid purple;
-    width: 100px;
-}
-
-.navbar li {
-    border: solid red;
+.navbar > a {
+    color: $lighter-blue;
     align-self: center;
     /*
     Text sizing
     */
 }
 
-.landing {
-    border: solid blue;
-    height: calc(100svh - 300px);
+#landing {
+    height: calc(100svh - 180px);
     display: grid;
-    grid-template-columns: 1fr 500px 1fr;
+    grid-template-columns: 1fr 600px 1fr;
     grid-template-rows: auto;
     align-content: center;
     }
 
-.landing > * {
+#landing > * {
     justify-self: center;
 }
 
-.landing > h1 {
+#landing > h1 {
     grid-column: 2;
     grid-row: 1;
-    border: solid green;
+    font-size: 5em;
 }
 
-.landing > h2 {
+#landing > h2 {
     grid-column: 2;
     grid-row: 2;
-    border: solid green;
 }
 
-.landing > p {
+#landing > p {
     grid-column: 2;
     grid-row: 3;
+    font-size: .75em;
 }
 
-.workhistory {
-    border: solid lightblue;
+.center-heading {
+    text-decoration: underline;
+    // padding: 5px 100px 5px 100px;
+    width: 95%;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    border: solid red;
+    background-color: gray;
+    border-radius: 10px;
+    opacity: 90%;
+    color: $light-blue;
+}
+
+#workhistory {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
 
-.workhistory > div {
+#workhistory > div {
     width: 97%;
     border: dotted green;
     margin: 10px;
+    padding-left: 10px;
+}
+
+#workhistory h3 {
+    font-family: serif;
+    font-style: italic;
 }
 
 .listing {
-    margin-left: 150px;
-    border: solid blue;
+    padding-left: 200px;
+    padding-bottom: 10px
 }
 
-.skills {
-    border: solid purple;
-    height: 100svh;
+.listing > * {
+    margin: 5px auto;
 }
 
-.skills > h1 {
-    border: solid green;
-    width: 50%;
-    height: 50px;
+.jobhighlights {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.no-list {
+    list-style: none;
 }
 
 .skillsgroup {
-    border: solid green;
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .skillgroup {
     border: solid indianred;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skillgroup > h1 {
+    width: 100%;
+    height: 2em;
+    border: solid peachpuff;
+    padding-left: 10px;
+}
+
+.skillgroup ul {
+    border: solid cornflowerblue;
+    text-align: center;
+    list-style-position: inside;
+    padding: 5px;
+}
+
+.concept {
+    font-style: italic;
+}
+
+.technology {
+    font-weight: bold;
+}
+
+#contact {
+    text-align: center;
 }
