@@ -1,9 +1,14 @@
 $darkest-blue: #26295F;
 $darker-blue: #353983;
-$light-blue: #4449A7;
+$dark-blue: #4449A7;
+$light-blue: #4876E6;
 $lighter-blue: #6065BE;
+$lightest-blue: #6AA6EF;
 $purple-highlight: #40265F;
+$purple-highlight-light: #716AEF;
 $teal-highlight: #26465F;
+$teal-highlight-light: #447BA7;
+$teal-highlight-lighter: #48C5E6;
 
 body {
     background: $darkest-blue;
@@ -15,6 +20,7 @@ body {
 
 #topbar {
     background-color: #002644;
+    border: solid $purple-highlight;
     display: flex;
     justify-content: space-between;
     height: 100px;
@@ -81,11 +87,11 @@ body {
     width: 95%;
     padding: 5px 0px 5px 0px;
     text-align: center;
-    border: solid red;
-    background-color: gray;
+    border: solid $darker-blue;
+    background-color: lightgray;
     border-radius: 10px;
     opacity: 90%;
-    color: $light-blue;
+    color: $darker-blue;
 }
 
 #workhistory {
@@ -97,13 +103,29 @@ body {
 
 #workhistory > div {
     width: 97%;
-    border: dotted green;
+    border: solid $light-blue;
+    border-radius: 5px;
     margin: 10px;
     padding-left: 10px;
+    background-color: $purple-highlight-light;
+    opacity: 60%;
+}
+
+#workhistory h1 {
+    color: $darker-blue;
+}
+
+#workhistory h2 {
+    color: $lightest-blue;
 }
 
 #workhistory h3 {
     font-family: serif;
+    font-style: italic;
+    color: $lighter-blue;
+}
+
+#workhistory p {
     font-style: italic;
 }
 
@@ -170,4 +192,8 @@ body {
 
 #contact {
     text-align: center;
+}
+
+.emphasis {
+    color: $teal-highlight-lighter;
 }

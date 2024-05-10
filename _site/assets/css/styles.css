@@ -8,6 +8,7 @@ body {
 
 #topbar {
   background-color: #002644;
+  border: solid #40265F;
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -73,11 +74,11 @@ body {
   width: 95%;
   padding: 5px 0px 5px 0px;
   text-align: center;
-  border: solid red;
-  background-color: gray;
+  border: solid #353983;
+  background-color: lightgray;
   border-radius: 10px;
   opacity: 90%;
-  color: #4449A7;
+  color: #353983;
 }
 
 #workhistory {
@@ -89,13 +90,29 @@ body {
 
 #workhistory > div {
   width: 97%;
-  border: dotted green;
+  border: solid #4876E6;
+  border-radius: 5px;
   margin: 10px;
   padding-left: 10px;
+  background-color: #716AEF;
+  opacity: 60%;
+}
+
+#workhistory h1 {
+  color: #353983;
+}
+
+#workhistory h2 {
+  color: #6AA6EF;
 }
 
 #workhistory h3 {
   font-family: serif;
+  font-style: italic;
+  color: #6065BE;
+}
+
+#workhistory p {
   font-style: italic;
 }
 
@@ -162,6 +179,10 @@ body {
 
 #contact {
   text-align: center;
+}
+
+.emphasis {
+  color: #48C5E6;
 }
 
 /*# sourceMappingURL=styles.css.map */
