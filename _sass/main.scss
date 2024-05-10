@@ -1,17 +1,26 @@
-$darkest-blue: #26295F;
-$darker-blue: #353983;
-$dark-blue: #4449A7;
-$light-blue: #4876E6;
-$lighter-blue: #6065BE;
-$lightest-blue: #6AA6EF;
-$purple-highlight: #40265F;
-$purple-highlight-light: #716AEF;
-$teal-highlight: #26465F;
-$teal-highlight-light: #447BA7;
-$teal-highlight-lighter: #48C5E6;
+$resume-blue-darker: #26295F;
+$resume-blue-dark: #353983;
+$resume-blue-light: #4449A7;
+$resume-blue-lighter: #6065BE;
+$bluejay-blue-darker: #1E56DD;
+$bluejay-blue-dark: #4876E6;
+$bluejay-blue-light: #3C8AEA;
+$bluejay-blue-lighter: #6AA6EF;
+
+$resume-purple-darker: #40265F;
+$resume-purple-dark: #583583;
+$resume-purple-light: #7144A7;
+$bluejay-purple-dark: #6948E6;
+$bluejay-purple-light: #716AEF;
+
+$resume-teal-darkest: #26465F;
+$resume-teal-darker: #356083;
+$resume-teal-light: #447BA7;
+$bluejay-teal-dark: #48C5E6;
+$bluejay-teal-light: #6AE9EF;
 
 body {
-    background: $darkest-blue;
+    background: $resume-blue-darker;
     color: white;
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
@@ -19,13 +28,12 @@ body {
 }
 
 #topbar {
-    background-color: #002644;
-    border: solid $purple-highlight;
+    background-color: $resume-teal-darkest;
+    border: solid $resume-teal-light;
     display: flex;
     justify-content: space-between;
     height: 100px;
     border-radius: 15px;
-    opacity: 90%;
 }
 
 #topbar > img {
@@ -45,7 +53,7 @@ body {
 }
 
 .navbar > a {
-    color: $lighter-blue;
+    color: $bluejay-blue-dark;
     align-self: center;
     /*
     Text sizing
@@ -87,11 +95,11 @@ body {
     width: 95%;
     padding: 5px 0px 5px 0px;
     text-align: center;
-    border: solid $darker-blue;
-    background-color: lightgray;
+    border: solid $resume-teal-darker;
+    background-color: rgb(224, 224, 224);
     border-radius: 10px;
     opacity: 90%;
-    color: $darker-blue;
+    color: $bluejay-blue-dark;
 }
 
 #workhistory {
@@ -103,26 +111,25 @@ body {
 
 #workhistory > div {
     width: 97%;
-    border: solid $light-blue;
-    border-radius: 5px;
+    border: solid $resume-teal-darker;
+    border-radius: 10px;
     margin: 10px;
-    padding-left: 10px;
-    background-color: $purple-highlight-light;
-    opacity: 60%;
+    padding-left: 20px;
+    background-color: $resume-blue-light;
 }
 
 #workhistory h1 {
-    color: $darker-blue;
+    font-style: italic;
 }
 
 #workhistory h2 {
-    color: $lightest-blue;
+    color: $bluejay-blue-lighter;
 }
 
 #workhistory h3 {
     font-family: serif;
     font-style: italic;
-    color: $lighter-blue;
+    color: $resume-teal-light;
 }
 
 #workhistory p {
@@ -151,6 +158,11 @@ body {
     gap: 5px;
 }
 
+#skills .title {
+    font-size: 1.4em;
+    text-decoration: underline;
+}
+
 .no-list {
     list-style: none;
 }
@@ -162,10 +174,13 @@ body {
 }
 
 .skillgroup {
-    border: solid indianred;
     display: flex;
     flex-wrap: wrap;
+    gap: 2px;
     justify-content: space-evenly;
+    background-color: $resume-blue-light;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 .skillgroup > h1 {
@@ -175,19 +190,42 @@ body {
     padding-left: 10px;
 }
 
-.skillgroup ul {
-    border: solid cornflowerblue;
+.skillgroup > div {
     text-align: center;
     list-style-position: inside;
+    padding: 2px 2px 10px 2px;
+    background-color: $resume-teal-darker;
+    border-radius: 10px;
+    max-width: max-content;
+}
+
+.skillgroup .skill-subsection {
+    display: flex;
+}
+
+.skill-subsection > p {
+    flex-basis: content;
+}
+
+.skillgroup ul {
+    text-align: center;
+    list-style-position: inside;
+    padding: 2px;
+    background-color: $resume-teal-darker;
+    border-radius: 10px;
+    display: table;
+}
+
+.skillgroup li {
     padding: 5px;
 }
 
 .concept {
-    font-style: italic;
+    font-weight: bold;
 }
 
 .technology {
-    font-weight: bold;
+    font-style: italic;
 }
 
 #contact {
@@ -195,5 +233,6 @@ body {
 }
 
 .emphasis {
-    color: $teal-highlight-lighter;
+    color: $bluejay-blue-light;
+    text-shadow: 1px 1px 2px $bluejay-purple-dark;
 }
