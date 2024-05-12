@@ -145,7 +145,8 @@ body {
 }
 
 .listing {
-    padding-bottom: 10px;
+    padding: 5px;
+    margin-left: 10px;
 }
 
 .listing > * {
@@ -189,6 +190,8 @@ body {
     background-color: $resume-blue-light;
     border-radius: 10px;
     margin: 5px;
+    width: max-content;
+    flex-grow: 1;
 }
 
 .skillgroup > h1 {
@@ -265,6 +268,8 @@ body {
 
 #contact {
     text-align: center;
+    background-color: white;
+    color: black;
 }
 
 .emphasis {
