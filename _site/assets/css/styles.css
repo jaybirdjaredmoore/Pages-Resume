@@ -177,6 +177,7 @@ body {
   height: 1.3em;
   padding: 10px;
   margin: 0px;
+  color: #447BA7;
 }
 
 .skillgroup > div {
@@ -190,12 +191,6 @@ body {
   align-self: flex-start;
 }
 
-.subgroup {
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-}
-
 .skillgroup ul {
   text-align: center;
   list-style-position: inside;
@@ -203,12 +198,6 @@ body {
   background-color: #356083;
   border-radius: 10px;
   display: table;
-}
-
-.subgroup {
-  display: flex;
-  flex-grow: 0;
-  flex-direction: column;
 }
 
 .subgroup h2 {
