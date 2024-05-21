@@ -31,24 +31,19 @@ body {
     background-color: $resume-teal-darkest;
     border: solid $resume-teal-light;
     display: flex;
-    justify-content: space-between;
     height: 100px;
     border-radius: 15px;
 }
 
 #topbar > img {
-    object-fit: contain;
     margin-left: 30px;
 }
 
 .navbar {
-    list-style: none;
-    width: 150px;
     display: flex;
     flex: 1;
     justify-content: end;
-    align-items: center;
-    gap: 45px;
+    gap: 15px;
     padding-right: 50px;
 }
 
@@ -61,10 +56,9 @@ body {
 }
 
 #landing {
-    height: calc(100svh - 180px);
+    height: calc(100svh - 100px);
     display: grid;
     grid-template-columns: 1fr 600px 1fr;
-    grid-template-rows: auto;
     align-content: center;
     }
 
@@ -74,25 +68,29 @@ body {
 
 #landing > h1 {
     grid-column: 2;
-    grid-row: 1;
     font-size: 5em;
 }
 
 #landing > h2 {
     grid-column: 2;
-    grid-row: 2;
 }
 
 #landing > p {
     grid-column: 2;
-    grid-row: 3;
     font-size: .75em;
+}
+
+.scrollarrow {
+    position: absolute;
+    bottom: 0;
+}
+
+#workhistory {
+    align-items: center;
 }
 
 .center-heading {
     text-decoration: underline;
-    // padding: 5px 100px 5px 100px;
-    width: 95%;
     padding: 5px 0px 5px 0px;
     text-align: center;
     border: solid $resume-teal-darker;
@@ -102,15 +100,7 @@ body {
     color: $bluejay-blue-dark;
 }
 
-#workhistory {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
 #workhistory > div {
-    width: 97%;
     border: solid $resume-teal-darker;
     border-radius: 10px;
     margin: 10px;
@@ -123,7 +113,8 @@ body {
 }
 
 #workhistory h2 {
-    color: $bluejay-blue-lighter;
+    color: $resume-blue-darker;
+    text-shadow: 1px 1px 1px $bluejay-purple-dark;
 }
 
 #workhistory h3 {
@@ -134,6 +125,7 @@ body {
 
 #workhistory p {
     font-style: italic;
+    font-size: 1.1em;
 }
 
 .listingfull {
@@ -141,12 +133,14 @@ body {
 }
 
 .logo {
-    border: solid red;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
 }
 
+
 .listing {
-    padding: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .listing > * {
@@ -155,25 +149,30 @@ body {
 
 .jobhighlights {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 5px;
+    list-style-position: inside;
+    color: lightgray;
+    margin-bottom: 10px;
 }
 
-#skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+.jobhighlights > li {
+    padding-left: 10px;
+}
+
+.era > hr {
+    width: 90%;
+    border: 1px dashed $resume-teal-light;
+}
+
+li::marker {
+    color: $resume-purple-darker;
 }
 
 #skills .title {
     font-size: 1.6em;
     text-decoration: underline;
     padding: 0px;
-}
-
-.no-list {
-    list-style: none;
 }
 
 .skillsgroup {
@@ -185,12 +184,10 @@ body {
 .skillgroup {
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
     justify-content: space-evenly;
     background-color: $resume-blue-light;
     border-radius: 10px;
     margin: 5px;
-    width: max-content;
     flex-grow: 1;
 }
 
@@ -257,8 +254,30 @@ body {
 
 #contact {
     text-align: center;
-    background-color: white;
-    color: black;
+}
+
+#contact > h3 {
+    margin: 50px 0px 75px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 200px;
+}
+
+.socials img {
+    height: 50px;
+    width: 50px;
+}
+
+.socials > div {
+    background-color: $resume-blue-lighter;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
 }
 
 .emphasis {
@@ -266,3 +285,8 @@ body {
     text-shadow: 1px 1px 2px $bluejay-purple-dark;
 }
 
+.totop {
+    text-align: center;
+    font-style: italic;
+    color: $bluejay-purple-light;
+}
