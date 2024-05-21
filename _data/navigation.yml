@@ -1,7 +1,7 @@
 - name: Home
 - name: Work History
-  link: \#workhistory
+  link: Pages-Resume/#workhistory
 - name: Skills
-  link: \#skills
-- name: Where To Fine Me
-  link: \#contact
+  link: Pages-Resume/#skills
+- name: Where To Find Me
+  link: Pages-Resume/#contact
