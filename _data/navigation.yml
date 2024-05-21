@@ -1,7 +1,7 @@
 - name: Home
 - name: Work History
-  link: Pages-Resume/#workhistory
+  link: ./#workhistory
 - name: Skills
-  link: Pages-Resume/#skills
+  link: ./#skills
 - name: Where To Find Me
-  link: Pages-Resume/#contact
+  link: ./#contact
