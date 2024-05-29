@@ -121,6 +121,19 @@ body {
 li::marker {
   color: #40265F; }
 
+.certs {
+  display: flex;
+  justify-content: space-evenly; }
+
+.certs > a {
+  background-color: #4449A7;
+  border: solid #356083;
+  color: white;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.3em; }
+
 #skills .title {
   font-size: 1.6em;
   text-decoration: underline;
@@ -136,6 +149,7 @@ li::marker {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #4449A7;
+  border: solid #356083;
   border-radius: 10px;
   margin: 5px;
   flex-grow: 1; }

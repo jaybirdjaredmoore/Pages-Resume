@@ -169,6 +169,21 @@ li::marker {
     color: $resume-purple-darker;
 }
 
+.certs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.certs > a {
+    background-color: $resume-blue-light;
+    border: solid $resume-teal-darker;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
 #skills .title {
     font-size: 1.6em;
     text-decoration: underline;
@@ -186,6 +201,7 @@ li::marker {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: $resume-blue-light;
+    border: solid $resume-teal-darker;
     border-radius: 10px;
     margin: 5px;
     flex-grow: 1;
