@@ -19,15 +19,21 @@ body {
   display: flex;
   flex: 1;
   justify-content: end;
-  gap: 15px;
-  padding-right: 50px; }
+  gap: 20px;
+  padding-right: 50px;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center; }
 
 .navbar > a {
   color: #4876E6;
   align-self: center;
-  /*
-  Text sizing
-  */ }
+  text-decoration: none;
+  font-size: 1.2em; }
+
+.navbar > a:nth-child(4) > sup {
+  font-size: 0.6em;
+  color: red;
+  padding-left: 3px; }
 
 #landing {
   height: calc(100svh - 100px);
