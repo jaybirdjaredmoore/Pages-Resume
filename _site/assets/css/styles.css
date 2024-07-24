@@ -21,7 +21,8 @@ body {
   justify-content: end;
   gap: 20px;
   padding-right: 50px;
-  text-shadow: 2px 2px 4px #000000; }
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center; }
 
 .navbar > a {
   color: #4876E6;
